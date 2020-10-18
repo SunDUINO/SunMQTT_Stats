@@ -8,3 +8,4 @@ Requirements :
 - METRO.Frameworks 
 - Banifu.UI
 
+More information in Polish available on the blog: https://suniotprojects.blogspot.com/
