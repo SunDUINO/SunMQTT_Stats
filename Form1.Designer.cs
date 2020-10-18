@@ -43,10 +43,22 @@
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
             this.BtnConnect = new System.Windows.Forms.PictureBox();
             this.dragControl = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.PnlStatus = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.LblVers = new System.Windows.Forms.Label();
+            this.LblUtime = new System.Windows.Forms.Label();
+            this.LblTStamp = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StatusCHK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnConnect)).BeginInit();
+            this.PnlStatus.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -182,12 +194,116 @@
             this.dragControl.TargetControl = this.panel1;
             this.dragControl.Vertical = true;
             // 
+            // PnlStatus
+            // 
+            this.PnlStatus.Controls.Add(this.LblTStamp);
+            this.PnlStatus.Controls.Add(this.LblUtime);
+            this.PnlStatus.Controls.Add(this.LblVers);
+            this.PnlStatus.Controls.Add(this.pictureBox3);
+            this.PnlStatus.Controls.Add(this.pictureBox1);
+            this.PnlStatus.Controls.Add(this.label8);
+            this.PnlStatus.Controls.Add(this.label7);
+            this.PnlStatus.Controls.Add(this.label6);
+            this.PnlStatus.Location = new System.Drawing.Point(0, 40);
+            this.PnlStatus.Name = "PnlStatus";
+            this.PnlStatus.Size = new System.Drawing.Size(310, 259);
+            this.PnlStatus.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(34, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Version :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(33, 70);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "UpTime :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(14, 97);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(77, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "TimeStamp :";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SunMQTT_Stats.Properties.Resources.footer_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 143);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SunMQTT_Stats.Properties.Resources.icon_nav_close;
+            this.pictureBox3.Location = new System.Drawing.Point(200, 185);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // LblVers
+            // 
+            this.LblVers.AutoSize = true;
+            this.LblVers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LblVers.ForeColor = System.Drawing.Color.White;
+            this.LblVers.Location = new System.Drawing.Point(97, 43);
+            this.LblVers.Name = "LblVers";
+            this.LblVers.Size = new System.Drawing.Size(34, 13);
+            this.LblVers.TabIndex = 5;
+            this.LblVers.Text = "label";
+            // 
+            // LblUtime
+            // 
+            this.LblUtime.AutoSize = true;
+            this.LblUtime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LblUtime.ForeColor = System.Drawing.Color.White;
+            this.LblUtime.Location = new System.Drawing.Point(97, 70);
+            this.LblUtime.Name = "LblUtime";
+            this.LblUtime.Size = new System.Drawing.Size(34, 13);
+            this.LblUtime.TabIndex = 6;
+            this.LblUtime.Text = "label";
+            // 
+            // LblTStamp
+            // 
+            this.LblTStamp.AutoSize = true;
+            this.LblTStamp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LblTStamp.ForeColor = System.Drawing.Color.White;
+            this.LblTStamp.Location = new System.Drawing.Point(97, 97);
+            this.LblTStamp.Name = "LblTStamp";
+            this.LblTStamp.Size = new System.Drawing.Size(34, 13);
+            this.LblTStamp.TabIndex = 7;
+            this.LblTStamp.Text = "label";
+            // 
             // logowanie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(310, 298);
+            this.Controls.Add(this.PnlStatus);
             this.Controls.Add(this.PictureBox2);
             this.Controls.Add(this.PasswordTxtB);
             this.Controls.Add(this.UserTxB);
@@ -207,6 +323,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.StatusCHK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnConnect)).EndInit();
+            this.PnlStatus.ResumeLayout(false);
+            this.PnlStatus.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +348,15 @@
         private System.Windows.Forms.PictureBox PictureBox2;
         private System.Windows.Forms.PictureBox StatusCHK;
         private Bunifu.Framework.UI.BunifuDragControl dragControl;
+        private System.Windows.Forms.Panel PnlStatus;
+        private System.Windows.Forms.Label LblTStamp;
+        private System.Windows.Forms.Label LblUtime;
+        private System.Windows.Forms.Label LblVers;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
 
